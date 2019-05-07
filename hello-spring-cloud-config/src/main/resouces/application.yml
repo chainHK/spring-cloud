@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/chainHK/respo
+          search-paths: resp
+          username: 40770795@qq.com
+          password: hk759347
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
