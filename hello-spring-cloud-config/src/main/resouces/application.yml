@@ -6,7 +6,7 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/chainHK/respo
+          uri: https://github.com/chainHK/spring-cloud-config
           search-paths: resp
           username: 40770795@qq.com
           password: hk759347
