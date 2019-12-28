@@ -26,6 +26,7 @@
 
         <!-- Spring Settings -->
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <ziokin.version>2.10.1</ziokin.version>
     </properties>
 
     <dependencyManagement>
@@ -36,6 +37,21 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin</artifactId>
+                <version>${ziokin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${ziokin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${ziokin.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
